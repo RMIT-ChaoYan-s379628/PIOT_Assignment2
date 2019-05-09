@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block head %}
+{{ super() }}
+<script src="{{url_for('static', filename='echarts.min.js')}}"></script>
+{% endblock %}
+{% block content %}
+<div class="container" style="max-width:800px; margin: 0 auto">
+    <div class="page-header">
+        <h2>Book Borrowed Report</h2>
+    </div>
+    <div class="myechart">
+        {{ myechart | safe}}
+    </div>
+</div>
+{% endblock %}
+

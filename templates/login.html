@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    
+    <form action="/" style="max-width:400px; margin: 0 auto" method="POST">
+        <div class="page-header">
+            <h3>Login</h3>
+        </div>
+        {{ form.hidden_tag() }}
+        {{ form.username.label }} {{ form.username(class='form-control') }}
+        {{ form.password.label }} {{ form.password(class='form-control') }}
+        <br>
+        {% for message in get_flashed_messages() %}
+        <div class="alert alert-warning">
+            <button class="close" type="button" data-dismiss="alert">&times;</button>
+            {{ message }}
+        </div>
+        {% endfor %}
+        
+        {{ form.submit(class='btn btn-success')}}
+    </form>
+</div>
+{% endblock %}
