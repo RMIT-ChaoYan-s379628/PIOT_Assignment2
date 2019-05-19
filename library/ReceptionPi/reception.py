@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 # Documentation: https://docs.python.org/3/library/socket.html
-import socket, json, sqlite3, sys
-from hash_pass import verify_password, hash_password
+import socket, json, sys
+import pymysql
 
 sys.path.append("..")
 import socket_utils
 
-DB_NAME = "library.db"
+from hash_pass import verify_password, hash_password
+from user import User
 
 with open("config.json", "r") as file:
     data = json.load(file)
@@ -16,8 +17,17 @@ PORT = 63000  # The port used by the server.
 ADDRESS = (HOST, PORT)
 
 
+def connectDB():
+    connection = pymysql.connect(host='127.0.0.1',
+                                 user='root',
+                                 password='65390057y',
+                                 db='library')
+    return connection
+
+
 def main():
     while (True):
+        print("****************************************************\n")
         print("1. Login")
         print("2. Register")
         print("0. Quit")
@@ -27,11 +37,8 @@ def main():
         print()
 
         if (text == "1"):
-            userId = input("Please insert your account.")
-            userPwd = input("Please insert your password.")
-            getUser(userId, userPwd)
-            # login(user)
-        elif(text == "2"):
+            getUser()
+        elif (text == "2"):
             register()
         elif (text == "0"):
             print("Goodbye.")
@@ -42,19 +49,32 @@ def main():
             print()
 
 
-def getUser(userId, userPwd):
-    connection = sqlite3.connect(DB_NAME)
-    connection.row_factory = sqlite3.Row
-    with connection:
-        cursor = connection.cursor()
-        cursor.execute("select * from Users where UserId = ?", (userId,))
-        pwd = cursor.fetchone()[1]
-        if verify_password(pwd,userPwd):
-            msg = "Login successfully."
-        else:
-            msg = "Your account or password is wrong. Please insert again."
+def getUser():
+    userId = input("Please insert your account.\n")
+    userPwd = input("Please insert your password.\n")
+    connection = connectDB()
+    with connection.cursor() as cursor:
+        try:
+            cursor.execute("SELECT EXISTS(SELECT * FROM Users WHERE userId='%s')" % userId)
+            res = cursor.fetchone()
+            if (res[0] == 1):
+                cursor.execute("select * from Users where UserId = '%s'" % userId)
+                row = cursor.fetchone()
+                pwd = row[1]
+                if verify_password(pwd, userPwd):
+                    msg = "Login successfully."
+                    print(msg)
+                    # currentUser = User(row[0], row[1], row[2], row[3], row[4])
+                    currentUser = {"userId": row[0],"username": row[2] + row[3], "firstname": row[2], "lastname": row[3]}
+                    login(currentUser)
+                else:
+                    msg = "Your password is wrong. Please insert again.\n"
+                    print(msg)
+            else:
+                print("The user is not existed. Please insert again or register.\n")
+        except Exception as e:
+            print(e)
     connection.close()
-    return print(msg)
 
 
 def login(user):
@@ -64,6 +84,7 @@ def login(user):
         print("Connected.")
 
         print("Logging in as {}".format(user["username"]))
+        # print("Logging in as {}".format(user.getName()))
         socket_utils.sendJson(s, user)
 
         print("Waiting for Master Pi...")
@@ -81,16 +102,15 @@ def register():
     userFName = input("Please insert your first name.")
     userLName = input("Please insert your last name.")
     userEmail = input("Please insert your email.")
-    connection = sqlite3.connect('library.db')
-    connection.row_factory = sqlite3.Row
-    with connection:
-        cursor = connection.cursor()
-        cursor.execute("select * from Users where UserId = ?", (userId,))
+    connection = connectDB()
+    with connection.cursor() as cursor:
+        cursor.execute("select * from Users where UserId = '%s'" % userId)
         row = cursor.fetchone()
         if (row == None):
             cursor.execute(
-                "insert into Users (UserId,UserPassword, FirstName, LastName,Email) values (?,?,?,?,?)",
-                (userId, hash_password(userPwd), userFName, userLName, userEmail,))
+                "insert into Users (UserId,UserPassword, FirstName, LastName,Email) values ('%s','%s','%s','%s','%s')" % (
+                    userId, hash_password(userPwd), userFName, userLName, userEmail))
+            connection.commit()
         else:
             print('This user has been existed.')
             print('Please insert again.\n')

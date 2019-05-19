@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: socketutils
+Version: 0.4.0
+Summary: socket utils
+Home-page: UNKNOWN
+Author: invlpg
+Author-email: invlpg@gmail.com
+License: MIT
+Description: socketutils
+        ~~~~~~~~~~
+        
+            socket utils:
+        
+            - recvall(s, n): recv() n bytes, otherwise raise a ValueError
+            - recvtillend(s): recv() till s is disconnected
+            - recvtill(s, marker): receive message ended by marker
+            - recvsized(s, sizeformat='!I'): receive a sized message
+            - sendsized(s, data, sizeformat='!I'): send a sized message
+            - wrap_socket(s): Take an instance s of socket, and return an instance of socketutils.UtilSocket, which wraps utility functions as methods."""
+        
+Platform: UNKNOWN
