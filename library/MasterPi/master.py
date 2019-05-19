@@ -7,6 +7,8 @@ import socket_utils
 import pymysql
 import tabulate
 
+from googleCalendar import addEvent
+
 HOST = ""  # Empty string means to listen on all IP's on the machine, also works with IPv6.
 # Note "0.0.0.0" also works but only with IPv4.
 PORT = 63000  # Port to listen on (non-privileged ports are > 1023).
@@ -27,8 +29,8 @@ def main():
                 print()
 
                 user = socket_utils.recvJson(conn)
-                print(user["userId"])
-                print(user["username"])
+                # print(user["userId"])
+                # print(user["username"])
                 menu(user)
 
                 socket_utils.sendJson(conn, {"logout": True})
@@ -44,31 +46,33 @@ def connectDB():
 
 def menu(user):
     CurrentUserID = look_up_user_ID(user)
-    print (CurrentUserID)
     while (True):
         print("Welcome to the Library Management System, {} \n".format(user["username"]))
         print("****************************************************\n")
-        print("1. Display user details")
-        print("2. Search the book")
-        print("3. Borrow the book")
-        print("4. Return the book")
+        # print("1. Display user details")
+        print("1. Search the book")
+        print("2. Borrow the book")
+        print("3. Return the book")
         print("0. Logout")
         print()
 
         text = input("Select an option: ")
         print()
 
+        # if (text == "1"):
+        #     print("UserId    : {}".format(user["userId"]))
+        #     print("Username  : {}".format(user["username"]))
+        #     print("First Name: {}".format(user["firstname"]))
+        #     print("Last Name : {}".format(user["lastname"]))
+        #     print()
         if (text == "1"):
-            print("UserId    : {}".format(user["userId"]))
-            print("Username  : {}".format(user["username"]))
-            print("First Name: {}".format(user["firstname"]))
-            print("Last Name : {}".format(user["lastname"]))
-            print()
-        elif (text == "2"):
             searchMenu()
             print()
-        elif (text == "3"):
+        elif (text == "2"):
             borrowBooks(CurrentUserID)
+            print()
+        elif (text == "3"):
+            returnBook(CurrentUserID)
             print()
         elif (text == "0"):
             print("Goodbye.")
@@ -102,12 +106,6 @@ def look_up_user_ID(user):
             return CurrentUserID
         except Exception as e:
             print(e)
-    # res = cursor.fetchone()
-    # if res:
-    #     CurrentUserID = res[0]
-    # return True
-    # print("User not found!")
-    # return False
 
 
 def searchMenu():
@@ -165,11 +163,22 @@ def borrow_book(BookID, CurrentUserID):
             sql = "insert into BookBorrowed (LmsUserID, BookID, Status, BorrowedDate) values (%s, %s, 'borrowed', CURRENT_DATE )" \
                   % (CurrentUserID, BookID)
             cursor.execute(sql)
+            cursor.execute("select Title,Author from Book where BookID = '%s' " % BookID)
+            res = cursor.fetchone()
+            title = res[0]
+            author = res[1]
+            cursor.execute("select Name from LMSUser where LMSUserID ='%s'" % CurrentUserID)
+            res2 = cursor.fetchone()
+            customerName=res2[0]
+            connection.commit()
+            # print(connection.affected_rows())
+            if connection.affected_rows() == 1:
+                addEvent(title, author, customerName)
+                connection.close()
+                print("Borrow the book successfully!")
         except Exception as e:
             print(e)
-    res = connection.commit()
-    if res == 1:
-        print("Borrow the book successfully!")
+
 
 def borrowBooks(CurrentUserID):
     BookID = None
@@ -180,7 +189,7 @@ def borrowBooks(CurrentUserID):
             print("No such book!")
             BookID = None
         else:
-            borrow_book(BookID,CurrentUserID)
+            borrow_book(BookID, CurrentUserID)
 
 
 def show_borrowed_books(CurrentUserID):
