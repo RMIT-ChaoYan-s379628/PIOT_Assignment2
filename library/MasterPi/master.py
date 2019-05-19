@@ -37,10 +37,14 @@ def main():
 
 
 def connectDB():
-    connection = pymysql.connect(host='127.0.0.1',
+    # connection = pymysql.connect(host='127.0.0.1',
+    #                              user='root',
+    #                              password='65390057y',
+    #                              db='library')
+    connection = pymysql.connect(host='35.244.109.255',
                                  user='root',
                                  password='65390057y',
-                                 db='library')
+                                 db='LMS')
     return connection
 
 
@@ -49,22 +53,13 @@ def menu(user):
     while (True):
         print("Welcome to the Library Management System, {} \n".format(user["username"]))
         print("****************************************************\n")
-        # print("1. Display user details")
         print("1. Search the book")
         print("2. Borrow the book")
         print("3. Return the book")
         print("0. Logout")
         print()
-
         text = input("Select an option: ")
         print()
-
-        # if (text == "1"):
-        #     print("UserId    : {}".format(user["userId"]))
-        #     print("Username  : {}".format(user["username"]))
-        #     print("First Name: {}".format(user["firstname"]))
-        #     print("Last Name : {}".format(user["lastname"]))
-        #     print()
         if (text == "1"):
             searchMenu()
             print()
@@ -87,10 +82,10 @@ def look_up_user_ID(user):
     connection = connectDB()
     with connection.cursor() as cursor:
         try:
-            cursor.execute("SELECT EXISTS(SELECT * FROM LMSUser WHERE UserName='%s')" % user["userId"])
+            cursor.execute("SELECT EXISTS(SELECT * FROM LmsUser WHERE UserName='%s')" % user["userId"])
             res = cursor.fetchone()
             if (res[0] == 1):
-                cursor.execute("select LmsUserID from LMSUser where UserName ='%s'" % user["userId"])
+                cursor.execute("select LmsUserID from LmsUser where UserName ='%s'" % user["userId"])
                 resCur = cursor.fetchone()
                 CurrentUserID = resCur[0]
 
@@ -99,7 +94,7 @@ def look_up_user_ID(user):
                 cursor.execute(
                     "insert into LmsUser (UserName, Name) values ('%s','%s')" % (user["userId"], user["username"]))
                 connection.commit()
-                cursor.execute("select LmsUserID from LMSUser where UserName ='%s'" % user["userId"])
+                cursor.execute("select LmsUserID from LmsUser where UserName ='%s'" % user["userId"])
                 resCur = cursor.fetchone()
                 CurrentUserID = resCur[0]
             connection.close()
@@ -167,7 +162,7 @@ def borrow_book(BookID, CurrentUserID):
             res = cursor.fetchone()
             title = res[0]
             author = res[1]
-            cursor.execute("select Name from LMSUser where LMSUserID ='%s'" % CurrentUserID)
+            cursor.execute("select Name from LmsUser where LMSUserID ='%s'" % CurrentUserID)
             res2 = cursor.fetchone()
             customerName=res2[0]
             connection.commit()
