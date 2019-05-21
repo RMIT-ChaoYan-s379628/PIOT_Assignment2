@@ -1,9 +1,9 @@
 import speech_recognition as sr
 import MySQLdb, subprocess
 
-HOST = "35.201.18.142"
+HOST = "35.189.34.91"
 USER = "root"
-PASSWORD = "abc123"
+PASSWORD = "123456"
 DATABASE = "People"
 
 MIC_NAME = "Microsoft® LifeCam HD-3000: USB Audio (hw:1,0)"
