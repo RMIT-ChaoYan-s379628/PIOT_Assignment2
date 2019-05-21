@@ -2,160 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="affc7718-92ee-4226-b4f6-fc2a861598e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/bin/easy_install" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/bin/easy_install-3.7" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/bin/easy_install-3.7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/bin/pip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/bin/pip3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/bin/pip3.7" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/bin/pip3.7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_internal/build_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_internal/build_env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_internal/req/req_uninstall.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_internal/req/req_uninstall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_internal/utils/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_internal/utils/appdirs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_internal/utils/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_internal/utils/ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_internal/wheel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_internal/wheel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/appdirs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/big5freq.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/big5freq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/big5prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/big5prober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/chardistribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/chardistribution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/charsetgroupprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/charsetgroupprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/charsetprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/charsetprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/codingstatemachine.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/codingstatemachine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/cp949prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/cp949prober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/escprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/escprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/escsm.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/escsm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/eucjpprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/eucjpprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euckrfreq.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euckrfreq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euckrprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euckrprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euctwfreq.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euctwfreq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euctwprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euctwprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/gb2312freq.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/gb2312freq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/gb2312prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/gb2312prober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/hebrewprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/hebrewprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/jisfreq.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/jisfreq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/jpcntx.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/jpcntx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langbulgarianmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langbulgarianmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langcyrillicmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langcyrillicmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langgreekmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langgreekmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langhebrewmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langhebrewmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langhungarianmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langhungarianmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langthaimodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langthaimodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langturkishmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langturkishmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/latin1prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/latin1prober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/mbcharsetprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/mbcharsetprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/mbcsgroupprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/mbcsgroupprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/mbcssm.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/mbcssm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/sbcharsetprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/sbcharsetprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/sbcsgroupprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/sbcsgroupprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/sjisprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/sjisprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/universaldetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/universaldetector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/utf8prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/utf8prober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/distlib/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/distlib/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/html5lib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/html5lib/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/html5lib/treebuilders/etree_lxml.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/html5lib/treebuilders/etree_lxml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/ipaddress.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/ipaddress.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/packaging/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/packaging/version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/pyparsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/pyparsing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/requests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/requests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/requests/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/requests/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/securetransport.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/securetransport.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/util/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/util/connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pkg_resources/_vendor/pyparsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/pkg_resources/_vendor/pyparsing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/setuptools/_vendor/packaging/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/setuptools/_vendor/packaging/version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/setuptools/_vendor/pyparsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/setuptools/_vendor/pyparsing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/setuptools/command/bdist_egg.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/setuptools/command/bdist_egg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/setuptools/command/build_clib.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/setuptools/command/build_clib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/setuptools/command/build_ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/setuptools/command/build_ext.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/setuptools/extension.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/venv/lib/python3.7/site-packages/setuptools/extension.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/createAndSeedDatabase.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/hash_pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/hash_pass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/quickstart.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/MasterPi/master.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/MasterPi/master.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/ReceptionPi/reception.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/reception.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/chardetect" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/chardetect" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/easy_install" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/easy_install-3.7" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/easy_install-3.7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/pip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/pip3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/pip3.7" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/pip3.7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/pkginfo" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/pkginfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/pygmentize" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/pygmentize" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2html.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2html.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2html5.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2html5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2latex.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2latex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2man.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2man.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2odt.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2odt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2odt_prepstyles.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2odt_prepstyles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2pseudoxml.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2pseudoxml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2s5.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2s5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2xetex.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rst2xetex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rstpep2html.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/rstpep2html.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/tqdm" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/tqdm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/twine" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/bin/twine" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/bleach/_vendor/html5lib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/bleach/_vendor/html5lib/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/charsetgroupprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/charsetgroupprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/euckrfreq.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/euckrfreq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/euctwprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/euctwprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/gb2312freq.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/gb2312freq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/gb2312prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/gb2312prober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/langbulgarianmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/langbulgarianmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/langgreekmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/langgreekmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/langhebrewmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/langhebrewmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/latin1prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/latin1prober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/sbcharsetprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/sbcharsetprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/sbcsgroupprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/sbcsgroupprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/sjisprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/sjisprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/universaldetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/universaldetector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/utf8prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/chardet/utf8prober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/docutils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/docutils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/docutils/nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/docutils/nodes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/docutils/writers/_html_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/docutils/writers/_html_base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_internal/req/req_uninstall.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_internal/req/req_uninstall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_internal/utils/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_internal/utils/ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_internal/wheel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_internal/wheel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/chardistribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/chardistribution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/charsetgroupprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/charsetgroupprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/charsetprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/charsetprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/codingstatemachine.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/codingstatemachine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/cp949prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/cp949prober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/escsm.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/escsm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/eucjpprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/eucjpprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euckrfreq.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euckrfreq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euckrprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euckrprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euctwfreq.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/euctwfreq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/gb2312freq.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/gb2312freq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/gb2312prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/gb2312prober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/hebrewprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/hebrewprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/jisfreq.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/jisfreq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/jpcntx.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/jpcntx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langbulgarianmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langbulgarianmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langcyrillicmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langcyrillicmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langhebrewmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langhebrewmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langhungarianmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langhungarianmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langthaimodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/langthaimodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/mbcharsetprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/mbcharsetprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/mbcssm.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/mbcssm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/sbcharsetprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/sbcharsetprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/sbcsgroupprober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/sbcsgroupprober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/universaldetector.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/universaldetector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/utf8prober.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/chardet/utf8prober.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/distlib/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/distlib/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/requests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/requests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/requests/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/requests/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pip/_vendor/urllib3/response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pipo.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/pipo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/urllib3/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/urllib3/response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/urllib3/util/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/ReceptionPi/venv/lib/python3.7/site-packages/urllib3/util/connection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,49 +12,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PIOT_Assignment2$reception.coverage" NAME="reception Coverage Results" MODIFIED="1558409017451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/library/ReceptionPi" />
+    <SUITE FILE_PATH="coverage/PIOT_Assignment2$reception.coverage" NAME="reception Coverage Results" MODIFIED="1558409330379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/library/ReceptionPi" />
     <SUITE FILE_PATH="coverage/PIOT_Assignment2$master.coverage" NAME="master Coverage Results" MODIFIED="1558408905927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/library/MasterPi" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/MasterPi/master.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#86#99#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/ReceptionPi/hash_pass.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/ReceptionPi/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/library/ReceptionPi/reception.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="93" column="46" lean-forward="true" selection-start-line="93" selection-start-column="46" selection-end-line="93" selection-end-column="46" />
+            <state relative-caret-position="257">
+              <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
               <folding>
                 <element signature="e#86#99#0" expanded="true" />
               </folding>
@@ -222,10 +37,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/library/MasterPi/master.py" />
         <option value="$PROJECT_DIR$/library/ReceptionPi/hash_pass.py" />
         <option value="$PROJECT_DIR$/library/ReceptionPi/config.json" />
         <option value="$PROJECT_DIR$/library/ReceptionPi/reception.py" />
+        <option value="$PROJECT_DIR$/library/MasterPi/master.py" />
       </list>
     </option>
   </component>
@@ -365,25 +180,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558408469081</updated>
-      <workItem from="1558408470849" duration="541000" />
+      <workItem from="1558408470849" duration="1074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="541000" />
+    <option name="totallyTimeSpent" value="1074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
@@ -406,13 +221,27 @@
     <entry file="file://$PROJECT_DIR$/library/ReceptionPi/createAndSeedDatabase.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/MasterPi/master.py">
+    <entry file="file://$PROJECT_DIR$/library/socket_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/ReceptionPi/reception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
           <folding>
             <element signature="e#86#99#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/ReceptionPi/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -426,17 +255,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/ReceptionPi/config.json">
+    <entry file="file://$PROJECT_DIR$/library/MasterPi/master.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/ReceptionPi/reception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="93" column="46" lean-forward="true" selection-start-line="93" selection-start-column="46" selection-end-line="93" selection-end-column="46" />
+        <state relative-caret-position="257">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
           <folding>
             <element signature="e#86#99#0" expanded="true" />
           </folding>

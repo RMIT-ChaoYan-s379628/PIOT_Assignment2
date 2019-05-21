@@ -27,7 +27,8 @@ def connectDB():
 
 
 def main():
-    while (True):
+    loginFlag = False
+    while (loginFlag == False):
         print("****************************************************\n")
         print("1. Login")
         print("2. Register")
@@ -39,6 +40,7 @@ def main():
 
         if (text == "1"):
             getUser()
+            loginFlag = True
         elif (text == "2"):
             register()
         elif (text == "0"):

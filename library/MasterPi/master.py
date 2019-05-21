@@ -41,6 +41,11 @@ def connectDB():
                                  password='65390057y',
                                  db='LMS')
     return connection
+    # connection = pymysql.connect(host='127.0.0.1',
+    #                              user='root',
+    #                              password='65390057y',
+    #                              db='library')
+    # return connection
 
 
 def menu(user):
