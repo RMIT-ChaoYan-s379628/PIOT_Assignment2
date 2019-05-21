@@ -5,5 +5,8 @@ connection = pymysql.connect(host='35.244.109.255',
                                  password='65390057y',
                                  db='LMS')
 with connection.cursor() as cursor:
-    cursor.execute("INSERT INTO `LMS`.`LmsUser` (`LmsUserID`, `UserName`, `Name`) VALUES ('1', 'test2', 'test2');")
+    cursor.execute("select * from Book;")
+    row=cursor.fetchall()
+    for item in row:
+        print(item[1])
     connection.commit()

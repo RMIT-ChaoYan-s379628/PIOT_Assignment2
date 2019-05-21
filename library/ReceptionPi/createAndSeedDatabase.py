@@ -1,6 +1,6 @@
 import sqlite3
 
-DB_NAME = "library.db"
+DB_NAME = "user.db"
 
 connection = sqlite3.connect(DB_NAME)
 

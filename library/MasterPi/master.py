@@ -3,16 +3,17 @@
 import socket
 import json
 import sys
-import pymysql
-import tabulate
 
 sys.path.append("..")
 import socket_utils
+import pymysql
+import tabulate
 
 from googleCalendar import addEvent
 
-HOST = ""
-PORT = 63000
+HOST = ""  # Empty string means to listen on all IP's on the machine, also works with IPv6.
+# Note "0.0.0.0" also works but only with IPv4.
+PORT = 63000  # Port to listen on (non-privileged ports are > 1023).
 ADDRESS = (HOST, PORT)
 
 
@@ -36,6 +37,10 @@ def main():
 
 
 def connectDB():
+    # connection = pymysql.connect(host='127.0.0.1',
+    #                              user='root',
+    #                              password='65390057y',
+    #                              db='library')
     connection = pymysql.connect(host='35.244.109.255',
                                  user='root',
                                  password='65390057y',
@@ -121,9 +126,9 @@ def searchMenu():
 def searchBooks(method, value):
     connection = connectDB()
     if method == 'BookID':
-        sql = "select * from BooK where %s=%s" % (method, value)
+        sql = "select * from Book where %s=%s" % (method, value)
     else:
-        sql = "select * from BooK where %s='%s'" % (method, value)
+        sql = "select * from Book where %s='%s'" % (method, value)
     with connection.cursor() as cursor:
         try:
             cursor.execute(sql)
@@ -161,6 +166,7 @@ def borrow_book(BookID, CurrentUserID):
             res2 = cursor.fetchone()
             customerName = res2[0]
             connection.commit()
+            # print(connection.affected_rows())
             if connection.affected_rows() == 1:
                 addEvent(title, author, customerName)
                 connection.close()
