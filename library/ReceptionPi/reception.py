@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # Documentation: https://docs.python.org/3/library/socket.html
-import socket, json, sys
+import socket
+import json
+import sys
 import pymysql
 
 sys.path.append("..")
 import socket_utils
 
 from hash_pass import verify_password, hash_password
-from user import User
 
 with open("config.json", "r") as file:
     data = json.load(file)
@@ -64,8 +65,8 @@ def getUser():
                 if verify_password(pwd, userPwd):
                     msg = "Login successfully."
                     print(msg)
-                    # currentUser = User(row[0], row[1], row[2], row[3], row[4])
-                    currentUser = {"userId": row[0],"username": row[2] + row[3], "firstname": row[2], "lastname": row[3]}
+                    currentUser = {"userId": row[0], "username": row[2] + row[3], "firstname": row[2],
+                                   "lastname": row[3]}
                     login(currentUser)
                 else:
                     msg = "Your password is wrong. Please insert again.\n"
@@ -84,7 +85,6 @@ def login(user):
         print("Connected.")
 
         print("Logging in as {}".format(user["username"]))
-        # print("Logging in as {}".format(user.getName()))
         socket_utils.sendJson(s, user)
 
         print("Waiting for Master Pi...")
