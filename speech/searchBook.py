@@ -4,12 +4,12 @@ import MySQLdb, subprocess
 HOST = "35.189.34.91"
 USER = "root"
 PASSWORD = "123456"
-DATABASE = "Book"
+DATABASE = "LMS"
 
 MIC_NAME = "Microsoft® LifeCam HD-3000: USB Audio (hw:1,0)"
 
 def main():
-    bookTitle = getTittleToSearch()
+    bookTitle = getBookTitleToSearch()
 
     if(bookTitle is None):
         print("Failed to get book.")
@@ -19,13 +19,13 @@ def main():
     print("Looking for book with title '{}'...".format(bookTitle))
     print()
 
-    rows = searchTitle(bookTitle)
+    rows = searchBookTitle(bookTitle)
     if(rows):
         print("Found:", rows)
     else:
         print("No results found.")
 
-def getTitleToSearch():
+def getBookTitleToSearch():
     # To test searching without the microphone uncomment this line of code
     # return input("Enter the book title to search for: ")
 
@@ -52,18 +52,18 @@ def getTitleToSearch():
             return None
 
     # recognize speech using Google Speech Recognition
-    firstName = None
+    bookTitle = None
     try:
         # for testing purposes, we're just using the default API key
         # to use another API key, use `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
         # instead of `r.recognize_google(audio)`
-        firstName = r.recognize_google(audio)
+        bookTitle = r.recognize_google(audio)
     except(sr.UnknownValueError, sr.RequestError):
         pass
     finally:
         return bookTitle
 
-def searchFirstName(bookTitle):
+def searchBookTitle(bookTitle):
     connection = MySQLdb.connect(HOST, USER, PASSWORD, DATABASE)
 
     with connection.cursor() as cursor:
