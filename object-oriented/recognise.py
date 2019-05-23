@@ -42,7 +42,7 @@ def recogniseFace(targetName):
     # loop over frames from the video file stream
     flag = False
     n = 0
-    while ((flag == False) and n <= 3):
+    while ((flag == False) and n < 3):
         # grab the frame from the threaded video stream
         frame = vs.read()
 

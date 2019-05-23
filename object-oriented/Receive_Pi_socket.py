@@ -53,6 +53,7 @@ def check_user():
     print("You tried too many times! Maybe you can register first!\n")
     return None
 
+
 def loginByface():
     '''
     Check the username
@@ -61,9 +62,10 @@ def loginByface():
     try_time = 0
     while try_time < 3:
         username = input("Username:")
+        encodeFace()
         res = session.query(User.username).filter(User.username == username).first()
         if res:
-            if (recogniseFace(username)):
+            if (recogniseFace(username) == True):
                 print("Login Successfully!\n")
                 return username
             else:
@@ -73,6 +75,8 @@ def loginByface():
             print("No such user! Check your username!\n")
             try_time += 1
     print("You tried too many times! Maybe you can register first!\n")
+    return None
+
 
 def add_user():
     '''
@@ -127,7 +131,23 @@ def add_user():
                              last_name=last_name,
                              email=email))
             session.commit()
-            print("Register Successfully!\n")
+            print("Do you want to register for face recognising? ")
+            print("1. Yes")
+            print("2. No")
+            print()
+            choice = input("Please select your option.")
+            if (choice == "1"):
+                captureFace(username)
+                encodeFace()
+                print("Register successfully.")
+                print("You can use login via face recognising now.\n")
+                print()
+            elif (choice == "2"):
+                print("Register successfully.\n")
+            else:
+                print("Invalid input, try again.")
+                print()
+            # print("Register Successfully!\n")
             return username
         else:
             print("Password is not the same.Try again.")
@@ -157,8 +177,8 @@ if __name__ == "__main__":
             choice = input("Please select your option.\n")
             if choice == "1":
                 username = check_user()
-            elif choice =="2":
-                loginByface()
+            elif choice == "2":
+                username = loginByface()
             elif choice == "3":
                 username = add_user()  # Auto-login after register
             elif choice == "0":

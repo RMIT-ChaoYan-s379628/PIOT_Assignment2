@@ -85,7 +85,7 @@ def addEvent(book, author, customer):
     }
 
     event = service.events().insert(calendarId='primary', body=event).execute()
-    print(event.get('id'))
+    # print(event.get('id'))
     eventId=event.get('id')
     # print('Event created: %s' % (event.get('htmlLink')))
     print('Event created.')

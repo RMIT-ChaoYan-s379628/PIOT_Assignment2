@@ -9,11 +9,17 @@ from googleCalendar import deleteEvent
 
 
 def connect_to_database():
-    conn = pymysql.connect(host='127.0.0.object-oriented',
-                           user='root',
-                           password='65390057y',
-                           db='LMS')
+    # conn = pymysql.connect(host='127.0.0.1',
+    #                        user='root',
+    #                        password='65390057y',
+    #                        db='LMS')
+    # return conn
+    conn = pymysql.connect(host='35.244.109.255',
+                                 user='root',
+                                 password='65390057y',
+                                 db='LMS')
     return conn
+
 
 
 def look_up_user_ID(username):
@@ -81,7 +87,7 @@ def borrow_book(BookID, CurrentUserID):
                 res2 = cursor.fetchone()
                 customerName = res2[0]
                 eventId = addEvent(title, author, customerName)
-                cursor.execute("select BookBorrowedID from BookBorrowed order by BookBorrowedID desc limit object-oriented")
+                cursor.execute("select BookBorrowedID from BookBorrowed order by BookBorrowedID desc limit 1")
                 res3 = cursor.fetchone()
                 BookBorrowedID = res3[0]
                 cursor.execute(
@@ -137,9 +143,9 @@ def show_borrowed_books(CurrentUserID):
 def search_books(method, value):
     conn = connect_to_database()
     if method == 'BookID':
-        sql = "select * from BooK where %s=%s" % (method, value)
+        sql = "select * from Book where %s=%s" % (method, value)
     else:
-        sql = "select * from BooK where %s='%s'" % (method, value)
+        sql = "select * from Book where %s='%s'" % (method, value)
     with conn.cursor() as cursor:
         try:
             cursor.execute(sql)
@@ -171,18 +177,18 @@ if __name__ == "__main__":
             print("****************************************************\n")
             logout_flag = False
             while not logout_flag:
-                print("object-oriented. Search the book")
+                print("1. Search the book")
                 print("2. Borrow the book")
                 print("3. Return the book")
                 print("0. Logout")
                 print()
                 choice = input("Please select your option:")
 
-                if choice == "object-oriented":
+                if choice == "1":
                     search_command = None
                     while search_command is None:
-                        search_command = input("Search base on: object-oriented.Title 2.Author name: ")
-                        if search_command == 'object-oriented':
+                        search_command = input("Search base on: 1.Title 2.Author name: ")
+                        if search_command == '1':
                             title = input("Please input title:")
                             format_and_print_books(search_books("Title", title))
                         elif search_command == '2':
