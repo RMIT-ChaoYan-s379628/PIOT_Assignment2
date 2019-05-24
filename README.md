@@ -31,7 +31,7 @@ The implementation of this assignment involves the following components for LMS 
         
         sudo apt-get install python3 python3-venv
 
-    - `MacOSX, Windows, Other`
+    - `MacOSX, Windows, Other<https://www.python.org/downloads/>`
 
 - Create a new virtual environment (recommended)::
 
@@ -74,8 +74,8 @@ The implementation of this assignment involves the following components for LMS 
 # Authorization
 -----
 
-- Follow the steps to `configure the Actions Console project and the Google account <httpsb://developers.google.com/assistant/sdk/guides/service/python/embed/config-dev-project-and-account>`_.
-- Follow the steps to `register a new device model and download the client secrets file <https://developers.google.com/assistant/sdk/guides/service/python/embed/register-device>`_.
+- Follow the steps to `configure the Actions Console project and the Google account <httpsb://>`_.
+- Follow the steps to `register a new device model and download the client secrets file <https://>`_.
 - Generate device credentials using ``google-oauthlib-tool``:
 
     pip install --upgrade google-auth-oauthlib[tool]
