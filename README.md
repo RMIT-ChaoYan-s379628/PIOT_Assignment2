@@ -15,9 +15,9 @@ The implementation of this assignment involves the following components for LMS 
 # Prerequisites
 -------------
 
-- `Python` (>= 3.4 recommended)
-- An `Actions Console Project`
-- A `Google account`<https://myaccount.google.com/>`_
+- `Python` (>= 3.4 recommended) <https://www.python.org/>
+- An `Actions Console Project`<https://console.actions.google.com/>
+- A `Google account`<https://myaccount.google.com/>
 - Google cloud SQL
 
 # Setup
