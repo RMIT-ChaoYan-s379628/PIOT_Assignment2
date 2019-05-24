@@ -10,7 +10,7 @@ The implementation of this assignment involves the following components for LMS 
 • AI features such as facial recognition, object detection and Voice detection
 • Programming with Cloud databases and,
 • Selected Software Engineering Project Management/Tools
-_________________________________________________________________________________________________________________________________________
+
 
 # Prerequisites
 
