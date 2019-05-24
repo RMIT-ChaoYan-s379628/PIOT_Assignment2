@@ -15,9 +15,9 @@ The implementation of this assignment involves the following components for LMS 
 # Prerequisites
 -------------
 
-- `Python <https://www.python.org/>`_ (>= 3.4 recommended)
-- An `Actions Console Project <https://console.actions.google.com/>`_
-- A `Google account <https://myaccount.google.com/>`_
+- `Python` (>= 3.4 recommended)
+- An `Actions Console Project`
+- A `Google account`
 - Google cloud SQL
 
 # Setup
@@ -31,7 +31,7 @@ The implementation of this assignment involves the following components for LMS 
         
         sudo apt-get install python3 python3-venv
 
-    - `MacOSX, Windows, Other <https://www.python.org/downloads/>`_
+    - `MacOSX, Windows, Other`
 
 - Create a new virtual environment (recommended)::
 
@@ -72,6 +72,15 @@ The implementation of this assignment involves the following components for LMS 
 
 
 # Authorization
+-----
+
+- Follow the steps to `configure the Actions Console project and the Google account <httpsb://developers.google.com/assistant/sdk/guides/service/python/embed/config-dev-project-and-account>`_.
+- Follow the steps to `register a new device model and download the client secrets file <https://developers.google.com/assistant/sdk/guides/service/python/embed/register-device>`_.
+- Generate device credentials using ``google-oauthlib-tool``:
+
+    pip install --upgrade google-auth-oauthlib[tool]
+    google-oauthlib-tool --client-secrets path/to/client_secret_<client-id>.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless
+
 
 # Run the samples
 
