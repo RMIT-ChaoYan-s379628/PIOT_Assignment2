@@ -20,6 +20,23 @@ The implementation of this assignment involves the following components for LMS 
 - A `Google account <https://myaccount.google.com/>`_
 
 # Setup
+-----
+
+- Install Python 3
+
+    - Ubuntu/Debian GNU/Linux::
+
+        sudo apt-get update
+        sudo apt-get install python3 python3-venv
+
+    - `MacOSX, Windows, Other <https://www.python.org/downloads/>`_
+
+- Create a new virtual environment (recommended)::
+
+    python3 -m venv env
+    env/bin/python -m pip install --upgrade pip setuptools wheel
+    source env/bin/activate
+
 
 # Authorization
 
