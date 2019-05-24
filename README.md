@@ -36,6 +36,21 @@ The implementation of this assignment involves the following components for LMS 
     python3 -m venv env
     env/bin/python -m pip install --upgrade pip setuptools wheel
     source env/bin/activate
+    
+    sudo apt install sqlite3
+    sudo apt install default-libmysqlclient-dev 
+    sudo apt install mysql-client
+    sudo apt install python3-venv
+    pip3 install virtualenv
+    pip3 install flask sense-hat
+    pip3 install rtimulib
+    pip3 install python-dotenv
+    pip3 install google-api-python-client oauth2client 
+    pip3 install httplib2
+    pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+    pip3 install pymysql
+    pip3 install tabulate
+    pip3 install sqlalchemy
 
 
 # Authorization
