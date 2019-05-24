@@ -27,6 +27,7 @@ The implementation of this assignment involves the following components for LMS 
     - Ubuntu/Debian GNU/Linux::
 
         sudo apt-get update
+        
         sudo apt-get install python3 python3-venv
 
     - `MacOSX, Windows, Other <https://www.python.org/downloads/>`_
