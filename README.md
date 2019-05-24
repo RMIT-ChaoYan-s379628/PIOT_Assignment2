@@ -31,7 +31,7 @@ The implementation of this assignment involves the following components for LMS 
         
         sudo apt-get install python3 python3-venv
 
-    - `MacOSX, Windows, Other<https://www.python.org/downloads/>`
+    - `MacOSX, Windows, Other`<https://www.python.org/downloads/>`
 
 - Create a new virtual environment (recommended)::
 
