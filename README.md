@@ -34,7 +34,9 @@ The implementation of this assignment involves the following components for LMS 
 - Create a new virtual environment (recommended)::
 
     python3 -m venv env
+    
     env/bin/python -m pip install --upgrade pip setuptools wheel
+    
     source env/bin/activate
     
     
