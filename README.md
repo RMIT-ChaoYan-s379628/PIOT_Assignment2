@@ -17,7 +17,7 @@ The implementation of this assignment involves the following components for LMS 
 
 - `Python` (>= 3.4 recommended)
 - An `Actions Console Project`
-- A `Google account`
+- A `Google account`<https://myaccount.google.com/>`_
 - Google cloud SQL
 
 # Setup
@@ -31,7 +31,7 @@ The implementation of this assignment involves the following components for LMS 
         
         sudo apt-get install python3 python3-venv
 
-    - `MacOSX, Windows, Other`<https://www.python.org/downloads/>`
+    - `MacOSX, Windows, Other`<https://www.python.org/downloads/>
 
 - Create a new virtual environment (recommended)::
 
