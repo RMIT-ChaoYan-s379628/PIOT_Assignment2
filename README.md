@@ -13,6 +13,11 @@ The implementation of this assignment involves the following components for LMS 
 
 
 # Prerequisites
+-------------
+
+- `Python <https://www.python.org/>`_ (>= 3.4 recommended)
+- An `Actions Console Project <https://console.actions.google.com/>`_
+- A `Google account <https://myaccount.google.com/>`_
 
 # Setup
 
