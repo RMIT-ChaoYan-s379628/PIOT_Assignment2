@@ -57,8 +57,8 @@ def getBookTitleToSearch():
         # for testing purposes, we're just using the default API key
         # to use another API key, use `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
         # instead of `r.recognize_google(audio)`
-        # bookTitle = r.recognize_google(audio)
-        bookTitle = r.recognize_google(audio, key="AIzaSyAPC3pbGKJGjY_FnYpnv71_dR5j1MyszL4")
+        bookTitle = r.recognize_google(audio)
+        # bookTitle = r.recognize_google(audio, key="AIzaSyAPC3pbGKJGjY_FnYpnv71_dR5j1MyszL4")
     except(sr.UnknownValueError, sr.RequestError):
         pass
     finally:

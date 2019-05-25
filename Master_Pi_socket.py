@@ -6,6 +6,12 @@ import pymysql
 import tabulate
 import speech_recognition as sr
 import MySQLdb, subprocess
+import datetime
+import imutils
+import time
+import cv2
+from imutils.video import VideoStream
+from pyzbar import pyzbar
 from googleCalendar import addEvent
 from googleCalendar import deleteEvent
 
@@ -226,6 +232,43 @@ def search_book_title(bookTitle):
     conn.close()
     return rows
 
+def barcode_scanner():
+    # initialize the video stream and allow the camera sensor to warm up
+    print("[INFO] starting video stream...")
+    vs = VideoStream(src=0).start()
+    time.sleep(2.0)
+
+    found = set()
+
+    # loop over the frames from the video stream
+    while True:
+        # grab the frame from the threaded video stream and resize it to
+        # have a maximum width of 400 pixels
+        frame = vs.read()
+        frame = imutils.resize(frame, width=400)
+
+        # find the barcodes in the frame and decode each of the barcodes
+        barcodes = pyzbar.decode(frame)
+
+        # loop over the detected barcodes
+        for barcode in barcodes:
+            # the barcode data is a bytes object so we convert it to a string
+            barcodeData = barcode.data.decode("utf-8")
+            barcodeType = barcode.type
+
+            # if the barcode text has not been seen before print it and update the set
+            if barcodeData not in found:
+                print("[FOUND] Type: {}, Data: {}".format(
+                    barcodeType, barcodeData))
+                found.add(barcodeData)
+
+    # wait a little before scanning again
+    time.sleep(1)
+
+    # close the output CSV file do a bit of cleanup
+    print("[INFO] cleaning up...")
+    vs.stop()
+
 def init_socket_server():
     host = socket.gethostname()
     port = 9999
@@ -282,11 +325,17 @@ if __name__ == "__main__":
                     show_borrowed_books(CurrentUserID)
                     return_finished = False
                     while not return_finished:
-                        borrowedID = input("Please input the Borrowed ID to return the book:")
+                        return_command = None
+                        while return_command is None:
+                            return_command = input("Search base on: 1.Input Book ID 2.Scann OR code")
+                            if return_command == '1':
+                                borrowedID = input("Please input the Borrowed ID to return the book:")
+                            elif return_command == '2':
+                                barcode_scanner()
                         continue_return = input("Continue returning books? (y/n)")
                         return_books(borrowedID)
-                        if continue_return == 'N' or 'n':
-                            return_finished = True
+                    if continue_return == 'N' or 'n':
+                        return_finished = True
 
                 elif choice == "0":
                     logout_flag = True
