@@ -15,10 +15,12 @@ The implementation of this assignment involves the following components for LMS 
 
 # Prerequisites
 
+- Raspberry model 3
 - `Python` (>= 3.4 recommended) <https://www.python.org/>
 - An `Actions Console Project`<https://console.actions.google.com/>
 - A `Google account`<https://myaccount.google.com/>
-- Google cloud SQL
+- Google’s GCP IoT platform (Google Cloud Platform)
+
 
 # Setup
 
