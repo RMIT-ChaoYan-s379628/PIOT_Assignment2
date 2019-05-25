@@ -125,7 +125,6 @@ The implementation of this assignment involves the following components for LMS 
 
 
 # Troubleshooting
----------------
 
 - Verify ALSA setup::
 
