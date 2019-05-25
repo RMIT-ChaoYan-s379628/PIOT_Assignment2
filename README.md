@@ -183,13 +183,13 @@ The contents are followed as:
    
         - Register and Login
    
-         - Sockets sent from RP
+        - Sockets sent from RP
    
-                    - Search a book
+        - Search a book
    
-                   -  Borrow a book
+        -  Borrow a book
    
-                   -  Return a book
+        -  Return a book
   
 - Web dashboard
    
