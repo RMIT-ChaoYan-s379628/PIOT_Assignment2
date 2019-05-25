@@ -91,7 +91,7 @@ The implementation of this assignment involves the following components for LMS 
 
 The contents are followed as:
   
-  -Smart Library IoT application
+- Smart Library IoT application
    
    Console menu- based systems on RP & MP
    
@@ -105,7 +105,7 @@ The contents are followed as:
    
    Return a book:
   
-  -Web dashboard
+- Web dashboard
    
    Admin features and RESTful API
    
@@ -119,7 +119,7 @@ The contents are followed as:
    
    Images Stored function
   
-  -Challenging part
+- Challenging part
    
    Voice/search feature
    
