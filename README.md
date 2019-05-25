@@ -82,8 +82,6 @@ The implementation of this assignment involves the following components for LMS 
 
 # Run the samples
 
----------------
-
 - Install the sample dependencies::
 
     sudo apt-get install portaudio19-dev libffi-dev libssl-dev
@@ -91,7 +89,7 @@ The implementation of this assignment involves the following components for LMS 
 
 -  Verify audio setup::
 
-    # Record a 5 sec sample and play it back
+    #Record a 5 sec sample and play it back
     python -m audio_helpers
 
 - Run the push to talk sample. The sample records a voice query after a key press and plays back the Google Assistant's answer::
@@ -128,30 +126,30 @@ The implementation of this assignment involves the following components for LMS 
 
 - Verify ALSA setup::
 
-    # Play a test sound
+    #Play a test sound
     speaker-test -t wav
 
-    # Record and play back some audio using ALSA command-line tools
+    #Record and play back some audio using ALSA command-line tools
     arecord --format=S16_LE --duration=5 --rate=16000 --file-type=raw out.raw
     aplay --format=S16_LE --rate=16000 --file-type=raw out.raw
 
 - If Assistant audio is choppy, try adjusting the sound device's block size::
 
-    # If using a USB speaker or dedicated soundcard, set block size to "0"
-    # to automatically adjust the buffer size
+    #If using a USB speaker or dedicated soundcard, set block size to "0"
+    #to automatically adjust the buffer size
     python -m audio_helpers --audio-block-size=0
 
-    # If using the line-out 3.5mm audio jack on the device, set block size
-    # to a value larger than the `ConverseResponse` audio payload size
+    #If using the line-out 3.5mm audio jack on the device, set block size
+    #to a value larger than the `ConverseResponse` audio payload size
     python -m audio_helpers --audio-block-size=3200
 
-    # Run the Assistant sample using the best block size value found above
+    #Run the Assistant sample using the best block size value found above
     python -m pushtotalk --audio-block-size=value
 
 - If Assistant audio is truncated, try adjusting the sound device's flush size::
 
-    # Set flush size to a value larger than the audio block size. You can
-    # run the sample using the --audio-flush-size flag as well.
+    #Set flush size to a value larger than the audio block size. You can
+    #run the sample using the --audio-flush-size flag as well.
     python -m audio_helpers --audio-block-size=3200 --audio-flush-size=6400
 
 See also the `troubleshooting section <https://developers.google.com/assistant/sdk/guides/service/troubleshooting>`_ of the official documentation.
