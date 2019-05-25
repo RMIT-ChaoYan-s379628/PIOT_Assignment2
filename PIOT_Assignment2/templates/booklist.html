@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="contariner" style="max-width:800px; margin:0 auto">
+    <div class="page-header">
+        <h2>Book List</h2>
+    </div>
+    <table class="table hover-table">
+        <thead>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Published Date</th>
+        </thead>
+        
+        <tbody>
+           {% for book in books %} 
+           <tr>
+               <td>{{ book.id }}</td>
+               <td>{{ book.title }}</td>
+               <td>{{ book.author }}</td>
+               <td>{{ book.PublishedDate }}</td>
+           </tr>
+           {% endfor %}
+        </tbody>
+    </table>
+    <form action="/booklist" class="form-inline" method="post">
+        {{ form.hidden_tag() }}
+        {{ form.name(class='form-control', placeholder='Title')}}
+        {{ form.author(class='form-control', placeholder='Author') }}
+        {{ form.code(class='form-control', placeholder='Published Date')}}
+        {{ form.submit(class='btn btn-small btn-success')}}
+    </form>
+    <br>
+    <form action="/deletebook" class="form-inline" method="post">
+        {{ form2.hidden_tag() }}
+        {{ form2.id(class='form-control', placeholder='BookID')}}
+        {{ form2.submit(class='btn btn-small btn-danger')}}
+    </form>
+</div>
+
+{% endblock %}
