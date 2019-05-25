@@ -84,15 +84,16 @@ The implementation of this assignment involves the following components for LMS 
 
 - Install the sample dependencies::
 
-    `sudo apt-get install portaudio19-dev libffi-dev libssl-dev`
+        sudo apt-get install portaudio19-dev libffi-dev libssl-dev
     
-    `pip install --upgrade -r requirements.txt`
+    
+        pip install --upgrade -r requirements.txt
 
 -  Verify audio setup::
 
-    `# Record a 5 sec sample and play it back`
+        # Record a 5 sec sample and play it back
     
-    `python -m audio_helpers`
+        python -m audio_helpers
 
 - Run the push to talk sample. The sample records a voice query after a key press and plays back the Google Assistant's answer::
 
