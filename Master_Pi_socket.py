@@ -294,13 +294,6 @@ def barcode_scanner():
                 found.add(barcodeData)
                 return barcodeData
 
-    # # wait a little before scanning again
-    # time.sleep(1)
-
-    # # close the output CSV file do a bit of cleanup
-    # print("[INFO] cleaning up...")
-    # vs.stop()
-
 
 def init_socket_server():
     host = socket.gethostname()
@@ -351,8 +344,7 @@ if __name__ == "__main__":
                 elif choice == "2":
                     BookID = None
                     while BookID is None:
-                        BookID = input(
-                            "Please input the ID of the book you want to borrow: ")
+                        BookID = input("Please input the ID of the book you want to borrow: ")
                         res = search_books('BookID', BookID)
                         if not res:
                             print("No such book!")
@@ -369,12 +361,11 @@ if __name__ == "__main__":
                             print("1. BookID ")
                             print("2. QRCode ")
                             print("0. Back")
+                            print()
 
-                            return_command = input(
-                                "Please select your option: ")
+                            return_command = input("Please select your option: ")
                             if return_command == '1':
-                                borrowedID = input(
-                                    "Please input the Borrowed ID to return the book: ")
+                                borrowedID = input("Please input the Borrowed ID to return the book: ")
                             elif return_command == '2':
                                 BookID = barcode_scanner()
                                 return_books_qrcode(BookID, CurrentUserID)
@@ -382,8 +373,7 @@ if __name__ == "__main__":
                             elif return_command == '0':
                                 return_finished = True
                                 break
-                            continue_return = input(
-                                "Continue returning books? (y/n)")
+                            continue_return = input("Continue returning books? (y/n)")
                             return_books(borrowedID)
                             if continue_return == 'N' or 'n':
                                 return_finished = True
