@@ -90,23 +90,41 @@ The implementation of this assignment involves the following components for LMS 
 # Sphinx Documents 
 
 The contents are followed as:
+  
   -Smart Library IoT application
+   
    Console menu- based systems on RP & MP
+   
    Register and Login
+   
    Sockets sent from RP
+   
    Search a book:
+   
    Borrow a book:
+   
    Return a book:
+  
   -Web dashboard
+   
    Admin features and RESTful API
+   
    Generate CLOUD data visualisation report
+   
    visual representation of the all book lending and return statistics
+  
   -Facial Recognition
+   
    OpenCV Based recognition
+   
    Images Stored function
+  
   -Challenging part
+   
    Voice/search feature
+   
    Object-detection feature
+   
    Unit test suite
 
 # License
