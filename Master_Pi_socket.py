@@ -5,7 +5,8 @@ import sys
 import pymysql
 import tabulate
 import speech_recognition as sr
-import MySQLdb, subprocess
+import MySQLdb
+import subprocess
 import datetime
 import imutils
 import time
@@ -23,11 +24,10 @@ def connect_to_database():
     #                        db='LMS')
     # return conn
     conn = pymysql.connect(host='35.244.109.255',
-                                 user='root',
-                                 password='65390057y',
-                                 db='LMS')
+                           user='root',
+                           password='65390057y',
+                           db='LMS')
     return conn
-
 
 
 def look_up_user_ID(username):
@@ -48,17 +48,20 @@ def look_up_user_ID(username):
     conn = connect_to_database()
     with conn.cursor() as cursor:
         try:
-            cursor.execute("SELECT EXISTS(SELECT * FROM LmsUser WHERE UserName='%s')" % username)
+            cursor.execute(
+                "SELECT EXISTS(SELECT * FROM LmsUser WHERE UserName='%s')" % username)
             res = cursor.fetchone()
             if (res[0] == 1):
-                cursor.execute("select LmsUserID from LmsUser where UserName ='%s'" % username)
+                cursor.execute(
+                    "select LmsUserID from LmsUser where UserName ='%s'" % username)
                 resCur = cursor.fetchone()
                 CurrentUserID = resCur[0]
             else:
                 cursor.execute(
                     "insert into LmsUser (UserName, Name) values ('%s','%s')" % (username, username))
                 conn.commit()
-                cursor.execute("select LmsUserID from LmsUser where UserName ='%s'" % username)
+                cursor.execute(
+                    "select LmsUserID from LmsUser where UserName ='%s'" % username)
                 resCur = cursor.fetchone()
                 CurrentUserID = resCur[0]
             conn.close()
@@ -87,15 +90,18 @@ def borrow_book(BookID, CurrentUserID):
             cursor.execute(sql)
             conn.commit()
             if conn.affected_rows() == 1:
-                cursor.execute("select Title,Author from Book where BookID = '%s' " % BookID)
+                cursor.execute(
+                    "select Title,Author from Book where BookID = '%s' " % BookID)
                 res1 = cursor.fetchone()
                 title = res1[0]
                 author = res1[1]
-                cursor.execute("select Name from LmsUser where LMSUserID ='%s'" % CurrentUserID)
+                cursor.execute(
+                    "select Name from LmsUser where LMSUserID ='%s'" % CurrentUserID)
                 res2 = cursor.fetchone()
                 customerName = res2[0]
                 eventId = addEvent(title, author, customerName)
-                cursor.execute("select BookBorrowedID from BookBorrowed order by BookBorrowedID desc limit 1")
+                cursor.execute(
+                    "select BookBorrowedID from BookBorrowed order by BookBorrowedID desc limit 1")
                 res3 = cursor.fetchone()
                 BookBorrowedID = res3[0]
                 cursor.execute(
@@ -114,25 +120,29 @@ def return_books(BookBorrowedID):
             cursor.execute(sql)
             conn.commit()
             if conn.affected_rows() == 1:
-                cursor.execute("select EventID from BookBorrowed where BookBorrowedID=%s" % BookBorrowedID)
-                res=cursor.fetchone()
-                eventId=res[0]
+                cursor.execute(
+                    "select EventID from BookBorrowed where BookBorrowedID=%s" % BookBorrowedID)
+                res = cursor.fetchone()
+                eventId = res[0]
                 deleteEvent(eventId)
                 print("Return the book successfully!")
         except Exception as e:
             print(e)
 
-def return_books_qrcode(BookID,CurrentUserID):
+
+def return_books_qrcode(BookID, CurrentUserID):
     conn = connect_to_database()
     with conn.cursor() as cursor:
         try:
-            sql = "update BookBorrowed set Status='returned', ReturnedDate = CURRENT_DATE where BookID = %s and LmsUserID=%s and Status='borrowed'" % (BookID,CurrentUserID)
+            sql = "update BookBorrowed set Status='returned', ReturnedDate = CURRENT_DATE where BookID = %s and LmsUserID=%s and Status='borrowed'" % (
+                BookID, CurrentUserID)
             cursor.execute(sql)
             conn.commit()
             if conn.affected_rows() == 1:
-                cursor.execute("select EventID from BookBorrowed where BookID = %s and LmsUserID=%s and ReturnedDate = CURRENT_DATE order by BookBorrowedID desc " % (BookID,CurrentUserID))
-                res=cursor.fetchone()
-                eventId=res[0]
+                cursor.execute("select EventID from BookBorrowed where BookID = %s and LmsUserID=%s and ReturnedDate = CURRENT_DATE order by BookBorrowedID desc " % (
+                    BookID, CurrentUserID))
+                res = cursor.fetchone()
+                eventId = res[0]
                 deleteEvent(eventId)
                 print("Return the book successfully!")
         except Exception as e:
@@ -161,7 +171,8 @@ def show_borrowed_books(CurrentUserID):
         for item in ans:
             add_book.append(item)
         books.append(add_book)
-    print(tabulate.tabulate(books, headers=["BorrowID", "BookID", "Title", "Author", "Published Time"]))
+    print(tabulate.tabulate(books, headers=[
+          "BorrowID", "BookID", "Title", "Author", "Published Time"]))
 
 
 def search_books(method, value):
@@ -180,6 +191,7 @@ def search_books(method, value):
     conn.close()
     return res
 
+
 def speech_recognition():
     bookTitle = get_booktitle_to_search()
 
@@ -197,6 +209,7 @@ def speech_recognition():
     else:
         print("No results found.")
 
+
 def get_booktitle_to_search():
     MIC_NAME = "Microsoft® LifeCam HD-3000: USB Audio (hw:1,0)"
     # To test searching without the microphone uncomment this line of code
@@ -210,7 +223,7 @@ def get_booktitle_to_search():
 
     # obtain audio from the microphone
     r = sr.Recognizer()
-    with sr.Microphone(device_index = device_id) as source:
+    with sr.Microphone(device_index=device_id) as source:
         # clear console of errors
         subprocess.run("clear")
 
@@ -220,7 +233,7 @@ def get_booktitle_to_search():
 
         print("Say the book title to search for.")
         try:
-            audio = r.listen(source, timeout = 1.5)
+            audio = r.listen(source, timeout=1.5)
         except sr.WaitTimeoutError:
             return None
 
@@ -237,6 +250,7 @@ def get_booktitle_to_search():
     finally:
         return bookTitle
 
+
 def search_book_title(bookTitle):
     # connection = MySQLdb.connect(HOST, USER, PASSWORD, DATABASE)
     conn = connect_to_database()
@@ -247,6 +261,7 @@ def search_book_title(bookTitle):
 
     conn.close()
     return format_and_print_books(rows)
+
 
 def barcode_scanner():
     # initialize the video stream and allow the camera sensor to warm up
@@ -286,6 +301,7 @@ def barcode_scanner():
     # print("[INFO] cleaning up...")
     # vs.stop()
 
+
 def init_socket_server():
     host = socket.gethostname()
     port = 9999
@@ -302,7 +318,8 @@ if __name__ == "__main__":
         username = client.recv(1024)
         CurrentUserID = look_up_user_ID(username.decode())
         if username is not None:
-            print("Welcome to the Library Management System, {} \n".format(username.decode()))
+            print("Welcome to the Library Management System, {} \n".format(
+                username.decode()))
             print("****************************************************\n")
             logout_flag = False
             while not logout_flag:
@@ -316,13 +333,16 @@ if __name__ == "__main__":
                 if choice == "1":
                     search_command = None
                     while search_command is None:
-                        search_command = input("Search base on: 1.Title 2.Author 3.Speech Recognition Service: ")
+                        search_command = input(
+                            "Search base on: 1.Title 2.Author 3.Speech Recognition Service: ")
                         if search_command == '1':
                             title = input("Please input title: ")
-                            format_and_print_books(search_books("Title", title))
+                            format_and_print_books(
+                                search_books("Title", title))
                         elif search_command == '2':
                             author = input("Please input author name: ")
-                            format_and_print_books(search_books("Author", author))
+                            format_and_print_books(
+                                search_books("Author", author))
                         elif search_command == '3':
                             speech_recognition()
                         else:
@@ -331,7 +351,8 @@ if __name__ == "__main__":
                 elif choice == "2":
                     BookID = None
                     while BookID is None:
-                        BookID = input("Please input the ID of the book you want to borrow: ")
+                        BookID = input(
+                            "Please input the ID of the book you want to borrow: ")
                         res = search_books('BookID', BookID)
                         if not res:
                             print("No such book!")
@@ -348,18 +369,21 @@ if __name__ == "__main__":
                             print("1. BookID ")
                             print("2. QRCode ")
                             print("0. Back")
-        
-                            return_command = input("Please select your option. ")
+
+                            return_command = input(
+                                "Please select your option: ")
                             if return_command == '1':
-                                borrowedID = input("Please input the Borrowed ID to return the book: ")
+                                borrowedID = input(
+                                    "Please input the Borrowed ID to return the book: ")
                             elif return_command == '2':
                                 BookID = barcode_scanner()
-                                return_books_qrcode(BookID,CurrentUserID)
+                                return_books_qrcode(BookID, CurrentUserID)
                                 break
-                            elif return_command=='0':
-                                return_finished=True
+                            elif return_command == '0':
+                                return_finished = True
                                 break
-                            continue_return = input("Continue returning books? (y/n)")
+                            continue_return = input(
+                                "Continue returning books? (y/n)")
                             return_books(borrowedID)
                             if continue_return == 'N' or 'n':
                                 return_finished = True
