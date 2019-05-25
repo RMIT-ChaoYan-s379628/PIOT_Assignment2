@@ -122,6 +122,22 @@ def return_books(BookBorrowedID):
         except Exception as e:
             print(e)
 
+def return_books_qrcode(BookID,CurrentUserID):
+    conn = connect_to_database()
+    with conn.cursor() as cursor:
+        try:
+            sql = "update BookBorrowed set Status='returned', ReturnedDate = CURRENT_DATE where BookID = %s and LmsUserID=%s and Status='borrowed'" % (BookID,CurrentUserID)
+            cursor.execute(sql)
+            conn.commit()
+            if conn.affected_rows() == 1:
+                cursor.execute("select EventID from BookBorrowed where BookID = %s and LmsUserID=%s and ReturnedDate = CURRENT_DATE order by BookBorrowedID desc " % (BookID,CurrentUserID))
+                res=cursor.fetchone()
+                eventId=res[0]
+                deleteEvent(eventId)
+                print("Return the book successfully!")
+        except Exception as e:
+            print(e)
+
 
 def show_borrowed_books(CurrentUserID):
     conn = connect_to_database()
@@ -230,13 +246,13 @@ def search_book_title(bookTitle):
         rows = cursor.fetchall()
 
     conn.close()
-    return rows
+    return format_and_print_books(rows)
 
 def barcode_scanner():
     # initialize the video stream and allow the camera sensor to warm up
     print("[INFO] starting video stream...")
     vs = VideoStream(src=0).start()
-    time.sleep(2.0)
+    # time.sleep(2.0)
 
     found = set()
 
@@ -258,16 +274,17 @@ def barcode_scanner():
 
             # if the barcode text has not been seen before print it and update the set
             if barcodeData not in found:
-                print("[FOUND] Type: {}, Data: {}".format(
+                print("[FOUND] Type: {}, BookID: {}".format(
                     barcodeType, barcodeData))
                 found.add(barcodeData)
+                return barcodeData
 
-    # wait a little before scanning again
-    time.sleep(1)
+    # # wait a little before scanning again
+    # time.sleep(1)
 
-    # close the output CSV file do a bit of cleanup
-    print("[INFO] cleaning up...")
-    vs.stop()
+    # # close the output CSV file do a bit of cleanup
+    # print("[INFO] cleaning up...")
+    # vs.stop()
 
 def init_socket_server():
     host = socket.gethostname()
@@ -294,17 +311,17 @@ if __name__ == "__main__":
                 print("3. Return the book")
                 print("0. Logout")
                 print()
-                choice = input("Please select your option:")
+                choice = input("Please select your option: ")
 
                 if choice == "1":
                     search_command = None
                     while search_command is None:
-                        search_command = input("Search base on: 1.Title 2.Author 3.Speech Recognition Service")
+                        search_command = input("Search base on: 1.Title 2.Author 3.Speech Recognition Service: ")
                         if search_command == '1':
-                            title = input("Please input title:")
+                            title = input("Please input title: ")
                             format_and_print_books(search_books("Title", title))
                         elif search_command == '2':
-                            author = input("Please input author name:")
+                            author = input("Please input author name: ")
                             format_and_print_books(search_books("Author", author))
                         elif search_command == '3':
                             speech_recognition()
@@ -327,15 +344,25 @@ if __name__ == "__main__":
                     while not return_finished:
                         return_command = None
                         while return_command is None:
-                            return_command = input("Search base on: 1.Input Book ID 2.Scann OR code")
+                            print("Search base on: ")
+                            print("1. BookID ")
+                            print("2. QRCode ")
+                            print("0. Back")
+        
+                            return_command = input("Please select your option. ")
                             if return_command == '1':
-                                borrowedID = input("Please input the Borrowed ID to return the book:")
+                                borrowedID = input("Please input the Borrowed ID to return the book: ")
                             elif return_command == '2':
-                                barcode_scanner()
-                        continue_return = input("Continue returning books? (y/n)")
-                        return_books(borrowedID)
-                    if continue_return == 'N' or 'n':
-                        return_finished = True
+                                BookID = barcode_scanner()
+                                return_books_qrcode(BookID,CurrentUserID)
+                                break
+                            elif return_command=='0':
+                                return_finished=True
+                                break
+                            continue_return = input("Continue returning books? (y/n)")
+                            return_books(borrowedID)
+                            if continue_return == 'N' or 'n':
+                                return_finished = True
 
                 elif choice == "0":
                     logout_flag = True
