@@ -179,17 +179,17 @@ The contents are followed as:
   
 - Smart Library IoT application
    
-        - Console menu- based systems on RP & MP
+         - Console menu- based systems on RP & MP
    
-        - Register and Login
+         - Register and Login
    
-        - Sockets sent from RP
+         - Sockets sent from RP
    
-        - Search a book
+         - Search a book
    
-        -  Borrow a book
+         - Borrow a book
    
-        -  Return a book
+         - Return a book
   
 - Web dashboard
    
