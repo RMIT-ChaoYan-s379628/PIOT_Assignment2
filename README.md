@@ -31,28 +31,49 @@ The implementation of this assignment involves the following components for LMS 
         sudo apt-get update
         
         sudo apt-get install python3 python3-venv
+        
+        sudo apt install sqlite3
+    
+        sudo apt install default-libmysqlclient-dev 
+    
+        sudo apt install mysql-client
+        
+        sudo apt install python3-venv
+    
+        pip3 install virtualenv
+        
+        pip3 install pymysql
+    
+        pip3 install tabulate
+    
+        pip3 install sqlalchemy
+        
+        pip3 install Flask-WTF
+        
+        pip3 install flask-bootstrap
+        
+        pip3 install Flask-HTTPAuth
+        
+        pip3 install Flask-SQLAlchemy
+        
+        pip3 install pyecharts
 
     - `MacOSX, Windows, Other`<https://www.python.org/downloads/>
 
-- Create a new virtual environment (recommended)::
+- Create a new virtual environment (recommended):
 
         python3 -m venv env
     
         env/bin/python -m pip install --upgrade pip setuptools wheel
     
         source env/bin/activate
-    
-    
-        - sudo apt install sqlite3
-    
-        - sudo apt install default-libmysqlclient-dev 
-    
-        - sudo apt install mysql-client
-    
-        - sudo apt install python3-venv
-    
-        - pip3 install virtualenv
-    
+        
+        - sudo apt-get install libtiff5-dev libtiff5 libjbig-dev
+        
+        - sudo apt-get install libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.5-dev tk8.5-dev python- tk
+        
+        - pip install wheel
+        
         - pip3 install flask sense-hat
     
         - pip3 install rtimulib
@@ -63,13 +84,7 @@ The implementation of this assignment involves the following components for LMS 
     
         - pip3 install httplib2
     
-        - pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
-    
-        - pip3 install pymysql
-    
-        - pip3 install tabulate
-    
-        - pip3 install sqlalchemy
+        - pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib   
 
 
 # Authorization
