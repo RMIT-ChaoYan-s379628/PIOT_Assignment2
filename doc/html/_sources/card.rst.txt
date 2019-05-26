@@ -1,0 +1,6 @@
+card module
+===========
+
+.. module:: card
+.. autoclass:: Card
+    :members:
