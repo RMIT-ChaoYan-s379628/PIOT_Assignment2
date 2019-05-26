@@ -212,8 +212,6 @@ def speech_recognition():
 
 def get_booktitle_to_search():
     MIC_NAME = "Microsoft® LifeCam HD-3000: USB Audio (hw:1,0)"
-    # To test searching without the microphone uncomment this line of code
-    # return input("Enter the book title to search for: ")
 
     # Set the device ID of the mic that we specifically want to use to avoid ambiguity
     for i, microphone_name in enumerate(sr.Microphone.list_microphone_names()):
@@ -240,9 +238,6 @@ def get_booktitle_to_search():
     # recognize speech using Google Speech Recognition
     bookTitle = None
     try:
-        # for testing purposes, we're just using the default API key
-        # to use another API key, use `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
-        # instead of `r.recognize_google(audio)`
         bookTitle = r.recognize_google(audio)
         # bookTitle = r.recognize_google(audio, key="AIzaSyAPC3pbGKJGjY_FnYpnv71_dR5j1MyszL4")
     except(sr.UnknownValueError, sr.RequestError):
@@ -252,7 +247,6 @@ def get_booktitle_to_search():
 
 
 def search_book_title(bookTitle):
-    # connection = MySQLdb.connect(HOST, USER, PASSWORD, DATABASE)
     conn = connect_to_database()
 
     with conn.cursor() as cursor:
@@ -273,21 +267,16 @@ def barcode_scanner():
 
     # loop over the frames from the video stream
     while True:
-        # grab the frame from the threaded video stream and resize it to
-        # have a maximum width of 400 pixels
         frame = vs.read()
         frame = imutils.resize(frame, width=400)
 
-        # find the barcodes in the frame and decode each of the barcodes
         barcodes = pyzbar.decode(frame)
 
         # loop over the detected barcodes
         for barcode in barcodes:
-            # the barcode data is a bytes object so we convert it to a string
             barcodeData = barcode.data.decode("utf-8")
             barcodeType = barcode.type
 
-            # if the barcode text has not been seen before print it and update the set
             if barcodeData not in found:
                 print("[FOUND] Type: {}, BookID: {}".format(
                     barcodeType, barcodeData))
