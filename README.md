@@ -217,6 +217,29 @@ The implementation of this assignment involves the following components for LMS 
 
         pip3 install imutils
 
+- Install QR Code :
+        pip3 install pyzbar
+
+- Install Google Speech Recognition :  
+        pip3 install SpeechRecognition
+        sudo apt-get install portaudio19-dev python-all-dev python3-all-dev pip3 install pyaudio
+        pip3 install google-api-python-client
+        sudo apt-get install flac
+
+        cd ~
+        sudo nano .asoundrc
+        copy text:
+                pcm.!default {
+                type asym
+                capture.pcm "mic" playback.pcm "speaker"
+                } pcm.mic {
+                type plug slave {
+                pcm "hw:1,0" }
+                } pcm.speaker {
+                type plug slave {
+                pcm "hw:0,0" }
+                }
+        save and exit
 
 
 # Authorization
