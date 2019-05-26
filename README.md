@@ -163,7 +163,59 @@ The implementation of this assignment involves the following components for LMS 
         '3.3.0'
         >>> quit()
 
+        --- Installing dlib and face_recognition python3 packages ---
+        sudo apt-get install build-essential \
+                cmake \
+                gfortran \
+                git \
+                wget \
+                curl \
+                graphicsmagick \
+                libgraphicsmagick1-dev \
+                libatlas-dev \
+                libavcodec-dev \
+                libavformat-dev \
+                libboost-all-dev \
+                libgtk2.0-dev \
+                libjpeg-dev \
+                liblapack-dev \
+                libswscale-dev \
+                pkg-config \
+                python3-dev \
+                python3-numpy \
+                python3-pip \
+                zip
 
+        sudo apt-get install python3-picamera
+
+        pip3 install --upgrade picamera[array]
+
+        # Update CONF_SWAPSIZE to a larger size.
+        sudo nano /etc/dphys-swapfile
+
+        # set size to absolute value, leaving empty (default) then uses computed value
+        #   you most likely don't want this, unless you have an special disk situation
+        # CONF_SWAPSIZE=100
+        CONF_SWAPSIZE=1024
+
+        sudo /etc/init.d/dphys-swapfile restart
+
+        pip3 install dlib
+        pip3 install face_recognition(cmake?)
+
+        # Reset CONF_SWAPSIZE to a smaller size.
+        sudo nano /etc/dphys-swapfile
+
+        # set size to absolute value, leaving empty (default) then uses computed value
+        #   you most likely don't want this, unless you have an special disk situation
+        CONF_SWAPSIZE=100
+        # CONF_SWAPSIZE=1024
+
+        sudo /etc/init.d/dphys-swapfile restart
+
+        --- Installing imutils python3 package ---
+
+        pip3 install imutils
 
 
 
