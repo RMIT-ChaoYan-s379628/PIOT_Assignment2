@@ -326,8 +326,13 @@ if __name__ == "__main__":
                 if choice == "1":
                     search_command = None
                     while search_command is None:
-                        search_command = input(
-                            "Search base on: 1.Title 2.Author 3.Speech Recognition Service: ")
+                        print("Search base on: ")
+                        print("1. Title")
+                        print("2. Author")
+                        print("3. Speech Recognition Service")
+                        print()
+
+                        search_command = input("Please select your option: ")
                         if search_command == '1':
                             title = input("Please input title: ")
                             format_and_print_books(
